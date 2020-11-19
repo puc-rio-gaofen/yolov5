@@ -1,6 +1,4 @@
-# This file contains google utils: https://cloud.google.com/storage/docs/reference/libraries
-# pip install --upgrade google-cloud-storage
-# from google.cloud import storage
+# Google utils: https://cloud.google.com/storage/docs/reference/libraries
 
 import os
 import platform
@@ -36,7 +34,7 @@ def attempt_download(weights):
         #    return
 
         try:  # GitHub
-            url = 'https://github.com/ultralytics/yolov5/releases/download/v3.0/' + file
+            url = 'https://github.com/ultralytics/yolov5/releases/download/v3.1/' + file
             print('Downloading %s to %s...' % (url, weights))
             torch.hub.download_url_to_file(url, weights)
             assert os.path.exists(weights) and os.path.getsize(weights) > 1E6  # check
