@@ -1,0 +1,9 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: /content/drive/My Drive/Colab Notebooks/puc-rio-gaofen/data/airplane/out/train/images
+val: /content/drive/My Drive/Colab Notebooks/puc-rio-gaofen/data/airplane/out/test/images
+
+# number of classes
+nc: 10
+
+# class names
+names: ['Boeing737', 'Boeing747', 'Boeing777', 'Boeing787', 'A321', 'A220', 'A330', 'A350', 'ARJ21', 'other']
